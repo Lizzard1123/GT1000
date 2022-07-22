@@ -16,6 +16,7 @@
 		AA678D262888F53900EBF98D /* GT1000Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA678D252888F53900EBF98D /* GT1000Tests.swift */; };
 		AA678D302888F53900EBF98D /* GT1000UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA678D2F2888F53900EBF98D /* GT1000UITests.swift */; };
 		AA678D322888F53900EBF98D /* GT1000UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA678D312888F53900EBF98D /* GT1000UITestsLaunchTests.swift */; };
+		AA678D3F2888FE1500EBF98D /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA678D3E2888FE1500EBF98D /* pageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AA678D2B2888F53900EBF98D /* GT1000UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GT1000UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA678D2F2888F53900EBF98D /* GT1000UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GT1000UITests.swift; sourceTree = "<group>"; };
 		AA678D312888F53900EBF98D /* GT1000UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GT1000UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA678D3E2888FE1500EBF98D /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AA678D102888F53800EBF98D /* SceneDelegate.swift */,
 				AA678D122888F53800EBF98D /* ViewController.swift */,
 				AA678D142888F53800EBF98D /* Main.storyboard */,
+				AA678D3E2888FE1500EBF98D /* pageViewController.swift */,
 				AA678D172888F53800EBF98D /* Assets.xcassets */,
 				AA678D192888F53800EBF98D /* LaunchScreen.storyboard */,
 				AA678D1C2888F53800EBF98D /* Info.plist */,
@@ -261,6 +264,7 @@
 				AA678D132888F53800EBF98D /* ViewController.swift in Sources */,
 				AA678D0F2888F53800EBF98D /* AppDelegate.swift in Sources */,
 				AA678D112888F53800EBF98D /* SceneDelegate.swift in Sources */,
+				AA678D3F2888FE1500EBF98D /* pageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

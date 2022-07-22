@@ -6,24 +6,34 @@
 //
 
 import UIKit
+import WebKit
 
-class pageViewController: UIViewController {
+class pageViewController: UIViewController, WKUIDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var label1: UILabel!
+    private var webView : WKWebView!
 
-        // Do any additional setup after loading the view.
+    override func loadView() {
+           super.loadView()
+           let webConfiguration = WKWebViewConfiguration()
+           webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 400), configuration: webConfiguration)
+           webView.uiDelegate = self
+           view = webView
+       }
+     
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           loadView()
+
+        self.webView.layer.borderColor = UIColor.black.cgColor
+        self.webView.layer.borderWidth = 2
+        
+        self.webView.load(URLRequest(url: URL(string: "http://128.61.45.41:3000/static/index.html")!))
+
+        //self.view.addSubview(self.webView)
+       }
+
+    override func viewDidLayoutSubviews() {
+        self.webView.frame = self.view.bounds
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
